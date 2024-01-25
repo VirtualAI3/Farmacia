@@ -16,8 +16,10 @@ use App\Http\Controllers\SesionController;
 */
 
 Route::get('/', function () {
-    return view('dashboard.dashboard');
+    return view('panel.index');
 })->middleware('auth');
+
+Route::view('/','panel.index')->name('panel');
 
 Route::get('/register',[RegistroController::class , 'create'])->name('registro.index');
 Route::post('/register',[RegistroController::class , 'store'])->name('login.index');

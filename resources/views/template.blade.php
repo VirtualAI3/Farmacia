@@ -28,7 +28,7 @@
     <x-navigation-header />
     <!-- End Navbar -->
     <!-- Header -->
-    <div class="header bg-gradient-primary pt-5 pt-md-8">
+    <div class="header bg-gradient-primary pb-6 pt-5 pt-md-8">
       <div class="container-fluid">
         <div class="header-body">
           <!-- Card stats -->

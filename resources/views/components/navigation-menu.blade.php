@@ -4,7 +4,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Brand -->
-    <a class="navbar-brand pt-0" href="./index.html">
+    <a class="navbar-brand pt-0" href="{{ route('panel') }}">
         <img src="./assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
     </a>
     <!-- User -->
@@ -88,13 +88,13 @@
         <!-- Navigation -->
         <ul class="navbar-nav">
             <li class="nav-item  active ">
-                <a class="nav-link  active " href="./index.html">
+                <a class="nav-link  active " href="{{ route('panel') }}">
                     <i class="ni ni-tv-2 text-primary"></i> Dashboard
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="./examples/icons.html">
-                    <i class="ni ni-planet text-blue"></i> Icons
+                    <i class="ni ni-planet text-blue"></i> Productos
                 </a>
             </li>
             <li class="nav-item">
@@ -126,12 +126,12 @@
         <!-- Divider -->
         <hr class="my-3">
         <!-- Heading -->
-        <h6 class="navbar-heading text-muted">Documentation</h6>
+        <h6 class="navbar-heading text-muted">Modulos</h6>
         <!-- Navigation -->
         <ul class="navbar-nav mb-md-3">
             <li class="nav-item">
                 <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html">
-                    <i class="ni ni-spaceship"></i> Getting started
+                    <i class="ni ni-spaceship"></i> Categorias
                 </a>
             </li>
             <li class="nav-item">
