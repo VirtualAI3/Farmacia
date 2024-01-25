@@ -21,7 +21,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->unsignedBigInteger('rol_id');
-            $table->tinyInteger('activo')->default(1);
+            $table->tinyInteger('estado')->default(1);
             $table->rememberToken();
             $table->timestamps();
             $table->foreign('rol_id')->references('id')->on('roles');

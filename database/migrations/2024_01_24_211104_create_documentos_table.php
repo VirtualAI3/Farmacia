@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('roles', function (Blueprint $table) {
-            $table->charset = 'utf8mb4';
-            $table->collation='utf8mb4_unicode_ci';
+        Schema::create('documentos', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
-            $table->tinyInteger('estado')->default(1);
+            $table->string('tipo_documento', 30);
+            $table->string('numero_documento',20);
             $table->timestamps();
         });
     }
@@ -26,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('roles');
+        Schema::dropIfExists('documentos');
     }
 };
